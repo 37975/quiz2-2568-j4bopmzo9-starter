@@ -41,25 +41,25 @@ export default function FoodTracker() {
         }}
       >
         <TextInput
-          label="Input label"
+          label="Name of item"
           mt="md"
-          description="Input description"
+          description="Name of item"
           error="Name of item is required"
-          placeholder="Input placeholder"
+          placeholder="e.g., Chicken rice"
         />
 
         <NumberInput
-          label="Input label"
+          label="Price per dish"
           mt="md"
-          description="Input description"
+          description="Price per dish"
           error="Price per dish is required"
           placeholder="0"
         />
 
         <NumberInput
-          label="Input label"
+          label="Quantity"
           mt="md"
-          description="Input description"
+          description="Quantity"
           error="Quantity is required"
           placeholder="0"
         />

@@ -6,6 +6,7 @@ import {
   Select,
   Button,
   Stack,
+  Divider,
 } from "@mantine/core";
 
 type AddFoodModalProps = {
@@ -31,6 +32,50 @@ export default function AddFoodModal({}: AddFoodModalProps) {
   let val_number: number = Number("500.0");
   console.log(val_number + 100); // 600.0
   return {
+    // <Modal
+    //     const title="Add an item"
+    //     open={opened}
+    //     onclose={() => {
+    //       setOpened(false);
+    //     }}
+    //   >
+    //     <TextInput
+    //       label="Name of item"
+    //       mt="md"
+    //       description="Name of item"
+    //       error="Name of item is required"
+    //       placeholder="e.g., Chicken rice"
+    //     />
+
+    //     <NumberInput
+    //       label="Price per dish"
+    //       mt="md"
+    //       description="Price per dish"
+    //       error="Price per dish is required"
+    //       placeholder="0"
+    //     />
+
+    //     <NumberInput
+    //       label="Quantity"
+    //       mt="md"
+    //       description="Quantity"
+    //       error="Quantity is required"
+    //       placeholder="0"
+    //     />
+
+    //     <Select
+    //       mt="md"
+    //       label="Category"
+    //       description="Category"
+    //       placeholder="Select a Category"
+    //       error="Category is required"
+    //       data={["React", "Angular", "Vue", "Svelte"]}
+    //     />
+    //   </Modal>
     /* Type additional text here. */
   };
 }
+function setOpened(arg0: boolean) {
+  throw new Error("Function not implemented.");
+}
+
