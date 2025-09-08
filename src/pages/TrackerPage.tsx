@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button, Stack, Title, Divider, Container } from "@mantine/core";
-import AddFoodModal from "../components/Modal";
+import { Button, Stack, Title, Divider, Container, Modal } from "@mantine/core";
 import { v4 as uuidv4 } from "uuid";
+import AddFoodModal from "../components/Modal";
 
 type FoodItem = {
   id: string;
@@ -23,7 +23,8 @@ export default function FoodTracker() {
       </Title>
       <Button onClick={() => setOpened(true)}>Add Food Item</Button>
       {/* Type additional AddFoodModal here. */}
-      {opened}
+      <Modal opened={opened} onClose={ ()=>{setOpened(false)}}>
+      </Modal>
 
       <Divider my="md" />
       {/* Type additional total cost here. */}
