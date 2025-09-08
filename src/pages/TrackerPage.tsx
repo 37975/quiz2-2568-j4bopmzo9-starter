@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { Button, Stack, Title, Divider, Container, Modal } from "@mantine/core";
+import {
+  Button,
+  Stack,
+  Title,
+  Divider,
+  Container,
+  Modal,
+  TextInput,
+  NumberInput,
+  Select,
+} from "@mantine/core";
 import { v4 as uuidv4 } from "uuid";
 import AddFoodModal from "../components/Modal";
 
@@ -23,7 +33,45 @@ export default function FoodTracker() {
       </Title>
       <Button onClick={() => setOpened(true)}>Add Food Item</Button>
       {/* Type additional AddFoodModal here. */}
-      <Modal opened={opened} onClose={ ()=>{setOpened(false)}}>
+      <Modal
+        title="Add an item"
+        opened={opened}
+        onClose={() => {
+          setOpened(false);
+        }}
+      >
+        <TextInput
+          label="Input label"
+          mt="md"
+          description="Input description"
+          error="Invalid name"
+          placeholder="Input placeholder"
+        />
+
+        <NumberInput
+          label="Input label"
+          mt="md"
+          description="Input description"
+          error="Price per dish is required"
+          placeholder="Input placeholder"
+        />
+
+        <NumberInput
+          label="Input label"
+          mt="md"
+          description="Input description"
+          error="Quantity is required"
+          placeholder="Input placeholder"
+        />
+
+        <Select
+          mt="md"
+          label="Category"
+          description="Category"
+          placeholder="Select a Category"
+          error="Category is required"
+          data={["React", "Angular", "Vue", "Svelte"]}
+        />
       </Modal>
 
       <Divider my="md" />
