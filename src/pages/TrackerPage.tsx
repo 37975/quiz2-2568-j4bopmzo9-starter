@@ -53,7 +53,7 @@ export default function FoodTracker() {
           mt="md"
           description="Input description"
           error="Price per dish is required"
-          placeholder="Input placeholder"
+          placeholder="0"
         />
 
         <NumberInput
@@ -61,7 +61,7 @@ export default function FoodTracker() {
           mt="md"
           description="Input description"
           error="Quantity is required"
-          placeholder="Input placeholder"
+          placeholder="0"
         />
 
         <Select
