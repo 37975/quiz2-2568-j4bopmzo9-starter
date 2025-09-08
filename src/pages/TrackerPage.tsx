@@ -70,7 +70,7 @@ export default function FoodTracker() {
           description="Category"
           placeholder="Select a Category"
           error="Category is required"
-          data={["React", "Angular", "Vue", "Svelte"]}
+          data={["Main Course", "Drink", "Dessert"]}
         />
       </Modal>
 
