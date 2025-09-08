@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Stack, Title, Divider, Container } from "@mantine/core";
+import AddFoodModal from "../components/Modal";
 import { v4 as uuidv4 } from "uuid";
 
 type FoodItem = {
@@ -20,8 +21,9 @@ export default function FoodTracker() {
       <Title order={2} mb="md">
         Food Tracker
       </Title>
-      <Button>Add Food Item</Button>
+      <Button onClick={() => setOpened(true)}>Add Food Item</Button>
       {/* Type additional AddFoodModal here. */}
+      {opened}
 
       <Divider my="md" />
       {/* Type additional total cost here. */}

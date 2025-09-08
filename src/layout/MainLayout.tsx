@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
-import { AppShell } from "@mantine/core";
+import { AppShell, AppShellFooter } from "@mantine/core";
 import HeaderComponent from "../components/Header";
 import { useDisclosure } from "@mantine/hooks";
+import Footer from "../components/Footer";
 
 export default function MainLayout() {
   const [opened, { toggle }] = useDisclosure();
@@ -18,6 +19,9 @@ export default function MainLayout() {
       <AppShell.Main>
         <Outlet />
       </AppShell.Main>
+      <AppShellFooter>
+        <Footer userName={"Teejutha Konsombat"} studentId={"670610708"} course={"CPE-261207"} year={"2025"}/>
+      </AppShellFooter>
     </AppShell>
   );
 }

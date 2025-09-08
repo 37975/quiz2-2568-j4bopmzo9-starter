@@ -11,7 +11,7 @@ const theme = createTheme({
     chanadda: virtualColor({
       name: "chanadda",
       dark: "yellow",
-      light: "violet",
+      light: "blue",
     }),
   },
 });
