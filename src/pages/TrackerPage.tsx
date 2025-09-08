@@ -44,7 +44,7 @@ export default function FoodTracker() {
           label="Input label"
           mt="md"
           description="Input description"
-          error="Invalid name"
+          error="Name of item is required"
           placeholder="Input placeholder"
         />
 
